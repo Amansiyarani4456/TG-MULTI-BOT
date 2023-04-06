@@ -25,8 +25,8 @@ async def callback(client: Client, query: CallbackQuery):
        await query.message.edit(
            text = tg.STAT.format(query.from_user.mention),        
            reply_markup=InlineKeyboardMarkup( [[
-               InlineKeyboardButton("🍁 ꜱᴜᴩᴩᴏʀᴛ", url="https://t.me/BETA_SUPPORT"),
-               InlineKeyboardButton("📯 ᴜᴩᴅᴀᴛᴇꜱ", url="https://t.me/Beta_BoTZ")
+               InlineKeyboardButton("🍁 ꜱᴜᴩᴩᴏʀᴛ", url="https://t.me/xtremetalk"),
+               InlineKeyboardButton("📯 ᴜᴩᴅᴀᴛᴇꜱ", url="https://t.me/netflix_arenaz")
                ],[            
                InlineKeyboardButton("ℹ️ ʜᴇʟᴩ", callback_data="help"),
                InlineKeyboardButton("📡 ᴀʙᴏᴜᴛ", callback_data="about") 
@@ -205,10 +205,10 @@ async def callback(client: Client, query: CallbackQuery):
            list_of_users += (f"**{count}.** [{user['login']}]({user['html_url']})\n")       
            count += 1
        buttons = [[
-           InlineKeyboardButton("👨‍💻 𝙳𝙴𝚅 1", url="https://t.me/ABOUT_JEOL"),
-           InlineKeyboardButton("👨‍💻 𝙳𝙴𝚅 2", url="https://t.me/Mr_MKN")
+           InlineKeyboardButton("👨‍💻 𝙳𝙴𝚅 1", url="https://t.me/piroxtreme"),
+           InlineKeyboardButton("👨‍💻 𝙳𝙴𝚅 2", url="https://t.me/xy_aman")
            ],[
-           InlineKeyboardButton("❣️ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐎𝐃𝐄 ❣️", url="https://github.com/Itz-JEOL/TG-MULTI-BOT"),
+           InlineKeyboardButton("❣️ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐎𝐃𝐄 ❣️", url="https://github.com/"),
            ],[
            InlineKeyboardButton("⏮️ ʙᴀᴄᴋ", callback_data="start"),
            InlineKeyboardButton("🔒 ᴄʟᴏꜱᴇ", callback_data="close")
