@@ -18,10 +18,10 @@ async def logosq(bot, message):
       logo = await generate_logo(text,True)
   
       if "graph.org" not in logo:
-        return await x.edit("`❌ Something Went Wrong...`\n\nReport This Error In [SUPPORT GRP](t.me/beta_support).")
+        return await x.edit("`❌ Something Went Wrong...`\n\nReport This Error In [SUPPORT GRP](t.me/xtremetalk).")
         
       if "error" in logo:
-        return await x.edit(f"`❌ Something Went Wrong...`\n\nReport This Error In [SUPPORT GRP](t.me/beta_support). \n\n`{logo}`")
+        return await x.edit(f"`❌ Something Went Wrong...`\n\nReport This Error In [SUPPORT GRP](t.me/xtremetalk). \n\n`{logo}`")
         
       await x.edit("`🔄 Done Generated... Now Sending You`")
       
@@ -41,7 +41,7 @@ async def logosq(bot, message):
 @Client.on_message(filters.command("logo") & filters.incoming & filters.text & ~filters.forwarded & filters.private)
 async def logo(bot, message):
   try:
-    text = message.text.replace("logo","").replace("/","").replace("@BETA_BOTZ","").strip().upper()
+    text = message.text.replace("logo","").replace("/","").replace("@netflix_arenz","").strip().upper()
     
     if text == "":
       return await message.reply_text("**To Make Logo -** /logo Your Name\n**To Make Square Logo - ** /logosq Your Name\n\n**♻️ Example:**\n/logo BETA\n/logosq MKN")
@@ -50,10 +50,10 @@ async def logo(bot, message):
     logo = await generate_logo(text)
 
     if "graph.org" not in logo:
-      return await x.edit("`❌ Something Went Wrong...`\n\nReport This Error In  [SUPPORT GRP](t.me/beta_support).")
+      return await x.edit("`❌ Something Went Wrong...`\n\nReport This Error In  [SUPPORT GRP](t.me/xtremetalk).")
       
     if "error" in logo:
-      return await x.edit(f"`❌ Something Went Wrong...`\n\nReport This Error In [SUPPORT GRP](t.me/beta_support).\n\n`{logo}`")
+      return await x.edit(f"`❌ Something Went Wrong...`\n\nReport This Error In [SUPPORT GRP](t.me/xtremetalk).\n\n`{logo}`")
       
     await x.edit("`🔄 Done Generated... Now Sending You`")
 
@@ -82,7 +82,7 @@ async def logo_doc(_,query):
     pass
   except Exception as e:
     try:
-      return await x.edit(f"`❌ Something Went Wrong...`\n\nReport This Error In [support group](t.me/beta_support) \n\n`{str(e)}`")
+      return await x.edit(f"`❌ Something Went Wrong...`\n\nReport This Error In [support group](t.me/xtremetalk) \n\n`{str(e)}`")
     except:
       return
     
